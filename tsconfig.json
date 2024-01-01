@@ -1,11 +1,15 @@
 {
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true
-  }
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true
+    },
+    "noUnusedLocals": false, //쓰지않는 지역변수 있으면 에러내기
+    "noImplicitAny": false, //any타입 금지 여부
+    "noUnusedParameters": false, //쓰지않는 파라미터 있으면 에러내기
+    "noImplicitReturns": false //함수에서 return 빼먹으면 에러내기
 }
