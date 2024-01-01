@@ -1,0 +1,29 @@
+{
+    "types": ["vite/client"],
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "noImplicitReturns": false,
+        "noUnusedLocals": false, //쓰지않는 지역변수 있으면 에러내기
+        "noImplicitAny": false, //any타입 금지 여부
+        "noUnusedParameters": false //쓰지않는 파라미터 있으면 에러내기
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
